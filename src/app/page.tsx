@@ -10,7 +10,7 @@ export default async function Home() {
 
     return (
         <HydrateClient>
-            <TopNav isLoggedIn={!!session} />
+            <TopNav session={session} />
             <main>
                 <div className="min-h-screen flex flex-row justify-between items-center p-16"> {/* Front Page */}
                     <h1 className="text-4xl font-bold flex-1">Lorem Ipsum</h1>
