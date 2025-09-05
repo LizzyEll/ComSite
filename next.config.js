@@ -7,10 +7,8 @@ import "./src/env.js";
 /** @type {import("next").NextConfig} */
 const config = {
     images: {
-        domains: [
-            "cdn.discordapp.com"
-        ]
-    }
+        remotePatterns: [new URL("https://cdn.discordapp.com/**")],
+    },
 };
 
 export default config;
