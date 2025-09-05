@@ -64,4 +64,7 @@ export const authConfig = {
             },
         }),
     },
+    session: {
+        maxAge: 24 * 60 * 60,
+    },
 } satisfies NextAuthConfig;
